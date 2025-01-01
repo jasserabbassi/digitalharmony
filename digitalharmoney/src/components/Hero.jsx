@@ -3,7 +3,7 @@ const Hero = () => {
     return (
       <div className="bg-gradient-to-r from-[#1A1A1A] to-[#2C2C2C] text-white py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
-          <img src={logo} alt="Digital Harmony Logo" className="w-128 h-128 mx-auto mb-8" />
+          <img src={logo} alt="Digital Harmony Logo" className="pt-2 w-96 h-96 mx-auto mb-8" />
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}>Digital Harmony</h1>
           
           <p className="text-xl mb-4">Redefining visual experiences through innovative holographic and LED display solutions</p>

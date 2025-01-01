@@ -2,7 +2,7 @@ const About = () => {
     return (
       <section id="about" className="py-16 ">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">About Us</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}>About Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300 border border-amber-400/20">
               <p className="text-lg mb-4">Digital Harmony is a leading provider of advanced holographic and LED display systems. With a commitment to excellence and innovation, we offer a comprehensive range of products and services designed to transform the way people interact with visual content.</p>

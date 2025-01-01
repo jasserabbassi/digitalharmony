@@ -42,7 +42,7 @@ const ValueCard = ({ title, description, arabicTitle, arabicDescription }) => {
     return (
       <section id="values" className="py-16 ">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Values</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}>Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <ValueCard key={index} {...value} />

@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <img src={logo} alt="Digital Harmony Logo" className="h-8 w-auto mr-2" />
             
-            <span className="font-bold text-xl text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}>Digital Harmony</span>
+            <span className="font-bold text-xl text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}></span>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -46,6 +46,7 @@ const Navbar = () => {
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800"
+                style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}
               >
                 {item}
               </a>
