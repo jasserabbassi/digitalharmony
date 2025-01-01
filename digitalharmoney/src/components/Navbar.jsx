@@ -20,6 +20,7 @@ const Navbar = () => {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800"
+                  style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}
                 >
                   {item}
                 </a>
