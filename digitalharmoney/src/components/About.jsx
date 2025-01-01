@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import PageTransition from './PageTransition ';
 const AboutCard = ({ title, description, arabicTitle, arabicDescription }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -9,6 +9,7 @@ const AboutCard = ({ title, description, arabicTitle, arabicDescription }) => {
   });
 
   return (
+    <PageTransition>
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
@@ -21,6 +22,7 @@ const AboutCard = ({ title, description, arabicTitle, arabicDescription }) => {
       <h4 className="text-xl font-semibold mb-2 text-right text-amber-400">{arabicTitle}</h4>
       <p className="text-gray-300 text-right">{arabicDescription}</p>
     </motion.div>
+    </PageTransition>
   );
 };
 
