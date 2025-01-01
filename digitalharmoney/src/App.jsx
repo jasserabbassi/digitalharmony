@@ -1,20 +1,26 @@
 import React from 'react';
-import Navbar from './components/Navbar'; // Import the Navbar component
-import './App.css';  // Import your custom CSS
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Products from './components/Products';
+import Values from './components/Values';
+import Footer from './components/Footer';
+
 function App() {
-  
-
   return (
-    <div className="App">
-    <Navbar />  {/* Display the Navbar component */}
-
-    <header className="App-header">
-      {/* You can add other content here, such as your logo or hero section */}
-      <h1 className="text-3xl text-blue-600">Welcome to My Portfolio</h1>
-      <p className="text-lg">This is a simple portfolio built with React and Tailwind CSS.</p>
-    </header>
-  </div>
-  )
+    <div className="App bg-gradient-to-r from-[#1A1A1A] to-[#2C2C2C] text-white min-h-screen">
+      <Navbar />
+      <Hero />
+      <main className="container mx-auto px-4 py-8">
+        <About />
+        <Services />
+        <Products />
+        <Values />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
