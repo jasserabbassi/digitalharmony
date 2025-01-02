@@ -7,6 +7,8 @@ import Products from './components/Products';
 import Values from './components/Values';
 import Footer from './components/Footer';
 import { startTextAnimation } from './TextAnimation';
+import Vision from './components/Vision';
+import Mission from './components/Mission';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Navbar />
       <Hero />
       <main className="container mx-auto px-4 py-8">
+        <Vision/>
+        <Mission/>
         <About />
         <Services />
         <Products />
