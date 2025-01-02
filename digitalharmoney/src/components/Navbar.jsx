@@ -9,7 +9,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
+            <a href="#hero">
             <img src={logo} alt="Digital Harmony Logo" className="h-8 w-auto mr-2" />
+            </a>
+            
             
             <span className="font-bold text-xl text-[#FFD700]" style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}></span>
           </div>
@@ -19,7 +22,7 @@ const Navbar = () => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-800"
+                  className="px-3 py-2 rounded-md text-lg	 font-medium hover:bg-gray-800"
                   style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}
                 >
                   {item}
@@ -46,7 +49,7 @@ const Navbar = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-800"
+                className="block px-3 py-2 rounded-md text-lg	 font-medium hover:bg-gray-800"
                 style={{ fontFamily: 'Stopwatch, sans-serif', fontStyle: 'italic' }}
               >
                 {item}

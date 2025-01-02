@@ -14,7 +14,7 @@ function App() {
     startTextAnimation();
   }, []);
   return (
-    <div className="App bg-gray-900 text-white min-h-screen">
+    <div className="App bg-gradient-to-br from-gray-900 to-black text-white min-h-screen">
       
       <Navbar />
       <Hero />

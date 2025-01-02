@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-amber-400">Contact Us</h3>
             <p className="text-gray-300 mb-2">Email: info@digitalharmony.com</p>
-            <p className="text-gray-300 mb-4">Phone: +1 (123) 456-7890</p>
+            <p className="text-gray-300 mb-4">Phone: +(966) 58 032 5775</p>
             <h4 className="text-lg font-semibold mb-2 text-amber-400">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-2xl text-gray-300 hover:text-amber-400 transition-colors duration-300"><FaFacebook /></a>
