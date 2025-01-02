@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaDigitalOcean, FaPalette, FaHandshake } from 'react-icons/fa';
-
+import mision from '../assets/mision.png';
 const Mission = () => {
   const services = [
     {
@@ -28,18 +28,20 @@ const Mission = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gray-900 relative overflow-hidden py-20">
-      <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-black to-gray-900"
-        animate={{ 
-          backgroundPosition: ['0% 0%', '100% 100%'],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: "reverse"
-        }}
-      />
+    <section className="min-h-screen relative overflow-hidden py-20">
+         <motion.div 
+           className="absolute inset-0 bg-cover bg-center rounded-xl shadow-md"
+           initial={{ opacity: 0 }}
+           animate={{ 
+             opacity: 1,
+             backgroundImage: `url(${mision})`
+           }}
+           transition={{
+             duration: 5,
+             repeat: Infinity,
+             repeatType: "reverse"
+           }}
+         />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.h2 

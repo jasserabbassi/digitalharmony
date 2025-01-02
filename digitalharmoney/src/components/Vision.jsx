@@ -1,16 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import visionimg from '../assets/vision.png';
 
 const Vision = () => {
   return (
-    <section className="min-h-screen bg-gray-900 relative overflow-hidden py-20">
+    <section className="min-h-screen my-4 relative overflow-hidden py-20">
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"
+        className="absolute inset-0 bg-cover bg-center rounded-xl shadow-md"
+        initial={{ opacity: 0 }}
         animate={{ 
-          backgroundPosition: ['0% 0%', '100% 100%'],
+          opacity: 1,
+          backgroundImage: `url(${visionimg})`
         }}
         transition={{
-          duration: 20,
+          duration: 5,
           repeat: Infinity,
           repeatType: "reverse"
         }}

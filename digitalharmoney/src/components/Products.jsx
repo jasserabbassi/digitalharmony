@@ -202,9 +202,9 @@ const Products = () => {
   return (
     <section
     id="products"
-    className="min-h-screen bg-gray-900 relative overflow-hidden py-20">
+    className="min-h-screen  relative overflow-hidden py-20">
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"
+        className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black rounded-xl shadow-md"
         animate={{ 
           backgroundPosition: ['0% 0%', '100% 100%'],
         }}
